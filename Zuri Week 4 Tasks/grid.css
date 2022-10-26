@@ -1,0 +1,51 @@
+/* ----------CSS RESET--------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#grid-body {
+  background-color: rgb(248, 247, 245);
+  display: flex;
+  place-items: center;
+  height: 100vh;
+}
+.item-a {
+  background-color: #833ab4;
+  grid-area: a;
+}
+.item-b {
+  background-color: #fcaf45;
+  grid-area: b;
+}
+.item-c {
+  background-color: #f77737;
+  grid-area: c;
+}
+.item-d {
+  background-color: #e1306c;
+  grid-area: d;
+}
+.item-e {
+  background-color: #e1306c;
+  grid-area: e;
+}
+.item-f {
+  background-color: #e1306c;
+  grid-area: f;
+}
+main div {
+  padding: 2em;
+  text-align: center;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 10px;
+  width: 50%;
+  margin: auto;
+}
